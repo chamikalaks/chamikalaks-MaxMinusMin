@@ -7,9 +7,28 @@ public class MaxMinusMin {
      * This will require you to know some of the List interface methods.
      *
      * @param nums an List<Integer> containing varying nums.
-     * @return the max value of nums minus the min value of nums.
+     * @return the max value of nums minus valuethe min value of nums.
      */
     public int difference(List<Integer> nums){
-        return 0;
+        int maxvalue = 0;
+        int minvalue = nums.get(maxvalue);
+     //   int MaxMinusMin = (maxvalue-minvalue);
+        for(int i:nums)
+        if (i>maxvalue){
+             maxvalue = i;
+        }
+        
+          return maxvalue - minvalue;
+        
+        }
+        
+
+   
+
+    
     }
-}
+
+    
+
+   
+
